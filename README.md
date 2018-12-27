@@ -1,5 +1,4 @@
 # Gulp Config
-----
 
 ## Usage
 ----
@@ -26,18 +25,18 @@
  ----
 
  Let's start with styles: 
-    - I'll recommend you use `main.less` only for importing other styles in the correct order
-    - First `@import` add `Normalize.css` — one of the best reset css projects
-    - When you run **build** or **watch** all `LESS` and `CSS` files will concat, get prefixes and minify(inculing media group queries)
+   - I'll recommend you use `main.less` only for importing other styles in the correct order
+   - First `@import` add `Normalize.css` — one of the best reset css projects
+   - When you run **build** or **watch** all `LESS` and `CSS` files will concat, get prefixes and minify(inculing media group queries)
 
  Now let's talk about scripts:
-    - For better scripts combane and use module system we use `WebPack-Stream`
-    - Entry point is `index.js` that can get all exports from other `*.js` files
-    - After you run **build** or **watch** `index.js` doing his job, `babel` will use `env-preset` and `uglify js` will minify all sctipts to the final `main.js` in `build` folder
+   - For better scripts combane and use module system we use `WebPack-Stream`
+   - Entry point is `index.js` that can get all exports from other `*.js` files
+   - After you run **build** or **watch** `index.js` doing his job, `babel` will use `env-preset` and `uglify js` will minify all sctipts to the final `main.js` in `build` folder
 
  Also, you can optimize images:
-    - Put your images into `src/images` and run `gulp imgMin'
-    - Your images will optimized and move to `build/images`
+   - Put your images into `src/images` and run `gulp imgMin'
+   - Your images will optimized and move to `build/images`
 
 ## Terminal Commands
 ----
