@@ -1,0 +1,45 @@
+{
+   "extends": "eslint:recommended",
+   "env": {
+      "browser": true,
+      "node": true
+   },
+   "rules": {
+      "semi": ["error", "always"],
+      "camelcase": ["error", { "properties": "always" }],
+      "default-case": "warn",
+      "dot-location": ["error", "property"],
+      "eqeqeq": ["warn", "smart"],
+      "no-console": "off",
+      "no-alert": "off",
+      "no-var": "error",
+      "prefer-const": "error",
+      "no-duplicate-imports": ["error", {"includeExports": true}],
+      "no-unused-vars": ["error", 
+         {
+            "vars": "all",
+            "args": "all",
+            "caughtErrors": "all",
+            "caughtErrorsIgnorePattern": "^ignored"
+         }
+      ],
+      "max-len": ["error", 
+         {
+            "code": 90,
+            "ignoreComments": true,
+            "ignoreStrings": true,
+            "ignoreUrls": true
+         }
+      ]
+   },
+   "globals": {
+      "window" : true,
+      "document" : true,
+      "console" : true
+  },
+  "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+   }
+
+}

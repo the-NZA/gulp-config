@@ -16,7 +16,7 @@
   - src
     - less
     - js
-    -images
+    - images
  ```
 
  `Build` folder and subfolders will create automatically after task run.

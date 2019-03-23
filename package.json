@@ -1,28 +1,33 @@
 {
-  "name": "Gulp Config",
+  "name": "gulpconfig",
   "version": "1.0.0",
   "description": "Gulp Config to build your project and optimize LESS, CSS, JS files",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["gulp", "webpack-stream", "gulp-less", "gulp-uglify", "gulp-js"],
+  "keywords": [
+    "gulp",
+    "webpack-stream",
+    "gulp-less",
+    "gulp-uglify",
+    "gulp-js"
+  ],
   "author": "https://github.com/the-NZA",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-babel": "^8.0.0-beta.2",
     "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^5.0.3",
+    "gulp-if": "^2.0.2",
     "gulp-less": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
+    "gulp-sourcemaps": "^2.6.5",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
